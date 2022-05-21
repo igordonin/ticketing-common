@@ -10,7 +10,7 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "del-cli ./build/*",
-    "predevPublish": "npm version patch && git add . && git commit -m \"Bump version\"",
+    "predevPublish": "npm version patch && git add . && git commit -m \"Bump version\" && git fetch",
     "devPublish": "git push --all && npm run build && npm publish"
   },
   "repository": {
