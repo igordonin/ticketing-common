@@ -9,9 +9,8 @@
   ],
   "scripts": {
     "build": "npm run clean && tsc",
-    "bumpVersion": "npm version patch && git add . && git commit -m \"Bump version\"",
     "clean": "del-cli ./build/*",
-    "devPublish": "npm run bumpVersion && npm run build && npm publish"
+    "devPublish": "npm version patch && git add . && git commit -m \"Bump version\" && git push && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
