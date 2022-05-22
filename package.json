@@ -1,6 +1,6 @@
 {
   "name": "@igordonin-org/ticketing-common",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -9,9 +9,7 @@
   ],
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "del-cli ./build/*",
-    "predevPublish": "npm version patch && git add . && git commit -m \"Bump version\" && git fetch",
-    "devPublish": "git push --all && npm run build && npm publish"
+    "clean": "del-cli ./build/*"
   },
   "repository": {
     "type": "git",
