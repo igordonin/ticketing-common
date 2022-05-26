@@ -1,8 +1,9 @@
 # ticketing-common
 
 Steps to Publish a new Version
-- Bump the version semantically such as `npm version patch`
 - Make changes
-- Git commit and push
+- `git commit`
+- Bump the version semantically such as `npm version patch`
+- `git push`
 - `npm run build`
 - `npm publish --access public`
